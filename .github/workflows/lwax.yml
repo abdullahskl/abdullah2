@@ -28,6 +28,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: install surge
-        uses: npm install --global surge
+        run: npm install --global surge
       - name: deploying using surge
-        uses: surge ./ lwax.surge.sh --token "32cb2c5bed7b9acd984870244e211b82"
+        run: surge ./ lwax.surge.sh --token "32cb2c5bed7b9acd984870244e211b82"
